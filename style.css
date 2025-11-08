@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  transition: all 0.5s linear; 
+
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image:url('images/photo_2025-11-08_16-27-08.jpg');
+    background-position: center;
+    background-size: cover ;
+    background-repeat:no-repeat;
+    position: relative;
+}
+.navbar img{
+    width: 80px;
+}
+.navbar-items{
+    flex: 1;
+    text-align: right;
+}
+.navbar{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: relative ;
+}
+.navbar ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #00b627;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    background-color: rgb(132, 230, 75);
+}
+.navbar ul li:hover::after{
+    width:100%
+}
+.burger{
+    display: none;
+}
+.logo{
+    background: transparent;
+    mix-blend-mode: multiply;
+}
+.navbar h2{
+    color: #00b627;
+    height: 2px;
+    margin-top: 30px;
+}
+
+/*_______main*/
+.main{
+    height: 60vh;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.text-box{
+    color: #17691d;
+    width: 30%;
+
+}
+.text-box h1{
+    padding: 20px;
+    font-size: 60px;
+    margin-top: 30px;
+}
+.text-box p{
+padding:25px;
+font-family:'Franklin Gothic Medium';
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9fcf9;
+    background-color: #17691d;
+    backdrop-filter: blur(30px);
+    height: 60%;
+    box-shadow: #070707 0px 5px 15px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.box input{
+    width: 70%;
+    border: none;
+    outline: none;
+    margin: 2% 3%;
+    padding: 3%;
+    border-radius: 5px;
+
+}
+.box h1{
+    margin-bottom: 3%;
+}
+.btn{
+    background-color:  #17691d;
+    color: #f8f3f3;
+    border: 2px solid transparent;
+    padding: 10px 8px;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.btn1:hover{
+    background-color: #f3e51e;
+    color: #eff5ef;
+}
+.btn2{
+    background-color: #f6f7f6;
+    color:  #17691d;
+    margin-top: 1%;
+    margin-right: 20px;
+}
+.btn2:hover{
+    color: #fff;
+    background-color: #dcece4;
+}
+ 
+
+
